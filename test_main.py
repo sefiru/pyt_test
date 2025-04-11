@@ -48,7 +48,7 @@ def test_handlers_report() -> None:
     report = HandlersReport().generate(data)
     # Проверяем, что в заголовке отчёта указано общее количество запросов
     # (20+72+19+14+18) + (23+78+14+15+18) = 291
-    print(report)
+
     assert "Total requests: 291" in report
     # Проверяем, что ручки выведены в алфавитном порядке
     index_admin = report.find("/admin/dashboard/")

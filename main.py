@@ -47,7 +47,7 @@ def main() -> None:
                 results.append(result)
             except Exception as exc:
                 print(f'При обработке файла {file_path} возникло исключение: {exc}', file=sys.stderr)
-    print(results)
+
     aggregated_data = aggregate_results(results)
 
     # Генерация отчёта, в данный момент доступен только "handlers"
